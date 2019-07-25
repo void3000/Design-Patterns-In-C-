@@ -4,6 +4,7 @@
 #include "Decorator.hpp"
 #include "Prototype.hpp"
 #include "Observer.hpp"
+#include "TemplatingMethod.hpp"
 #include "ChainOfResponsible.hpp"
 
 Singleton* logger = Singleton::getInstance();
@@ -51,6 +52,9 @@ int main(int argc, char *argv[])
 	std::cout << "Observer A's state = " << observerA.get_state() << "\n";
 	std::cout << "Observer B's state = " << observerB.get_state() << "\n";
 	std::cout << "Observer C's state = " << observerC.get_state() << "\n";
+
+	ConcreteTravel travel;
+	travel.trevel();
 
 	return 0;
 }
